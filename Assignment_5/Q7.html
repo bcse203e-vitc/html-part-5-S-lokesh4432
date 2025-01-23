@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Section Webpage</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+    
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+
+        section {
+            height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+
+        #section1 {
+            background-color: #ff6b6b;
+            color: white;
+        }
+
+        #section2 {
+            background-color: #4ecdc4;
+            color: white;
+        }
+
+        #section3 {
+            background-color: #ffe66d;
+            color: black;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <a href="#section1">Section 1</a>
+        <a href="#section2">Section 2</a>
+        <a href="#section3">Section 3</a>
+    </div>
+
+    <section id="section1">Welcome to Section 1</section>
+    <section id="section2">Welcome to Section 2</section>
+    <section id="section3">Welcome to Section 3</section>
+</body>
+</html>
