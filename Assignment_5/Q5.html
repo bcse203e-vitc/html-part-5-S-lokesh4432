@@ -1,0 +1,64 @@
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Buttons</title>
+    <style>
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+        }
+
+        /* Gradient Background Button */
+        .gradient-btn {
+            background: linear-gradient(to right, #ff6b6b, #4ecdc4);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: transform 0.3s ease;
+        }
+        .gradient-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Border Color Change Button */
+        .border-btn {
+            background: transparent;
+            color: #2c3e50;
+            border: 2px solid #3498db;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        .border-btn:hover {
+            border-color: #e74c3c;
+            color: #e74c3c;
+        }
+
+        /* Glowing Button */
+        .glow-btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: box-shadow 0.3s ease;
+        }
+        .glow-btn:hover {
+            box-shadow: 0 0 20px rgba(52, 152, 219, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="gradient-btn">Gradient Button</button>
+        <button class="border-btn">Border Hover Button</button>
+        <button class="glow-btn">Glowing Button</button>
+    </div>
+</body>
+</html>
