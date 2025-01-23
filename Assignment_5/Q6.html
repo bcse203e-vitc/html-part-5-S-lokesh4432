@@ -1,0 +1,43 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Animations</title>
+    <style>
+        @keyframes colorChange {
+            0% { color: blue; }
+            50% { color: purple; }
+            100% { color: red; }
+        }
+
+        @keyframes moveText {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(50px); }
+        }
+
+        .animated-header {
+            text-align: center;
+            font-size: 2.5em;
+            animation: colorChange 5s infinite alternate, 
+                       moveText 3s ease-in-out infinite alternate;
+        }
+
+        .hover-element {
+            width: 200px;
+            height: 100px;
+            background-color: #3498db;
+            margin: 50px auto;
+            transition: all 0.5s ease;
+        }
+
+        .hover-element:hover {
+            transform: scale(1.2) rotate(15deg);
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="animated-header">Animated Webpage Header</h1>
+    <div class="hover-element"></div>
+</body>
+</html>
